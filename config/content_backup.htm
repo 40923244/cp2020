@@ -1,15 +1,20 @@
-<h1>About</h1>
-<p>此內容管理系統以 <a href="https://github.com/mdecourse/cmsimde">https://github.com/mdecourse/cmsimde</a> 作為 submodule 運作, 可以選定對應的版本運作, cmsimde 可以持續改版, 不會影響之前設為 submodule, 使用舊版 cmsimde 模組的內容管理相關運作.</p>
-<h4>利用 cmsimde 建立靜態網誌方法:</h4>
-<p>1. 在 github 建立倉儲, git clone 到近端</p>
-<p>2. 參考 <a href="https://github.com/mdecourse/newcms">https://github.com/mdecourse/newcms</a>, 加入除了 cmsimde 目錄外的所有內容</p>
-<p>以 git submodule add <a href="https://github.com/mdecourse/cmsimde">https://github.com/mdecourse/cmsimde</a> cmsimde</p>
-<p>建立 cmsimde 目錄, 並從 github 取下子模組內容.</p>
-<p>3.在近端維護時, 更換目錄到倉儲中的 cmsimde, 以 python wsgi.py 啟動近端網際伺服器.</p>
-<p>動態內容編輯完成後, 以 generate_pages 轉為靜態內容, 以 git add commit 及 push 將內容推到遠端.</p>
-<p>4. 之後若要以 git clone 取下包含 submodule 的所有內容, 執行:</p>
-<p>git clone --recurse-submodules <a href="https://github.com/mdecourse/newcms.git">https://github.com/mdecourse/newcms.git</a></p>
-<h1>Develop</h1>
-<p><a href="https://github.com/mdecourse/cmsimde">https://github.com/mdecourse/cmsimde</a> 的開發, 可以在一個目錄中放入 cmsimde, 然後將 up_dir 中的內容放到與 cmsimde 目錄同位階的地方, 使用 command 進入 cmsimde 目錄, 執行 python wsgi.py, 就可以啟動, 以瀏覽器 https://localhost:9443 就可以連接, 以 admin 作為管理者密碼, 就可以登入維護內容.</p>
-<p>cmsimde 的開發採用 Leo Editor, 開啟 cmsimde 目錄中的 cmsimde.leo 就可以進行程式修改, 結束後, 若要保留網際內容, 只要將 cmsimde 外部的內容倒回 up_dir 目錄中即可後續對 cmsimde 遠端倉儲進行改版.</p>
-<p>init.py 位於  up_dir 目錄, 可以設定 site_title 與 uwsgi 等變數.</p>
+<h1>首頁</h1>
+<h1>HW1</h1>
+<h2>PCH9-Networking Overview</h2>
+<p><strong>Overview/</strong><span lang="zh-TW">總覽</span></p>
+<p>In this module, we are going to cover the various types of networks, including local area networks, wide area networks, personal area networks, and metropolitan area networks. Next, we will cover the various network relationships, such as client/server and peer-to-peer, and focus on the types of resources our networks use. Finally, we will talk about the topologies of our networks, such as the bus, the ring, the star, the full mesh, and hybrid network topologies.</p>
+<p>在本模塊中，我們將涵蓋各種類型的網絡，包括局域網，廣域網，個人局域網和城域網。接下來，我們將介紹各種網絡關係，例如客戶端/服務器和對等網絡，並集中討論網絡使用的資源類型。最後，我們將討論網絡的拓撲，例如總線，環形，星形，全網格和混合網絡拓撲。</p>
+<p><strong>Network Defined By Geography</strong></p>
+<div class="section" id="N106A3">
+<div class="sectionContain">
+<p id="N106AA" lang="">Networks are defined by the geography they cover. We start with the area around a single person, with this area being termed the personal area network (PAN). Next, we expand outward to the local area network (LAN), which can contain an entire office floor or building. Moving outward again, we have the metropolitan area network, which covers the area across the city by connecting multiple LANs together. Finally, we have the wide area network (WAN). This is the largest network we define by geography and it can go across the country or even across the world. A great example of a WAN is the Internet, since it connects many networks together and stretches across the globe.</p>
+<p lang="">網絡由其所覆蓋的地理位置定義。我們從一個人周圍的區域開始，將該區域稱為個人區域網絡（PAN）。接下來，我們向外擴展到局域網（LAN），該局域網可以包含整個辦公樓層或建築物。再次向外移動，我們有了城域網，該城域網通過將多個LAN連接在一起而覆蓋了整個城市。最後，我們有廣域網（WAN）。這是我們按地理位置定義的最大網絡，它可以遍及全國，甚至遍及全球。 WAN就是一個很好的例子，因為Internet將許多網絡連接在一起並遍及全球。</p>
+<div class="tw-ta-container hide-focus-ring tw-nfl" id="tw-target-rmn-container"></div>
+<div class="imagewrap"><span class="image"><img class="popimg" id="_i_0" onclick="loadImageFromPage(this);" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH09/webcontent/PCH09/image1.png"/></span>
+<p id="N106B1" lang="">Geographic networks. Image used under CC-BY license from<span> </span><a href="http://www.jasondion.com/" id="_i_1" lang="" target="_blank">Jason Dion</a>.</p>
+<p lang=""><strong><span title="Quick scroll up">Personal Area Network</span></strong></p>
+<p id="N106E1" lang="">A PAN has a very small range limited to just a few meters. If you stretch your hands out at your sides and spin around in a circle, this is the physical range of most PANs. Bluetooth is one of the main things we use to create a PAN, although USB and infrared can also be used for these networks. Bluetooth has a range between one meter and 100 meters depending on which class of Bluetooth you are using, but most common Bluetooth devices are class two devices limited to 10 meters. Some good examples of PANs are the connection between a USB hard drive and a laptop, or a Bluetooth cellphone connecting to your car stereo system wirelessly.</p>
+</div>
+</div>
+</div>
+<p></p>
