@@ -1,0 +1,286 @@
+<!DOCTYPE html><html>
+        <head>
+        <title>CMSiMDE</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700,900" rel="stylesheet">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/icomoon/style.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/magnific-popup.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/jquery-ui.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.theme.default.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap-datepicker.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/flaticon/font/flaticon.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/aos.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/style.css">
+        <link rel="shortcut icon" href="./../cmsimde/static/favicons.png">
+        
+        <style type='text/css'>
+            .site-section {
+            background-color: #FFFF;
+            padding: 40px 40px;
+            }
+            body > div > div.dropdown.open {
+                display: block;
+            }
+        </style>
+    
+        <!-- <script src="./../cmsimde/static/jquery.js"></script> -->
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+        <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/normalize.min.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch_set.js"></script>
+        <script src="tipuesearch_content.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/tipuesearch.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch.js"></script>
+        <script>
+            /* original tipuesearch
+            $(document).ready(function() {
+                 $('#tipue_search_input').tipuesearch();
+            });
+            */
+            // customed doSearch
+            function doSearch() {
+                $('#tipue_search_input').tipuesearch({
+                    newWindow: true, 
+                    minimumLength: 2,
+                    wholeWords: false, // for search 中文
+                });
+            }
+            $(document).ready(doSearch);
+        </script>
+        
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shCore.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushBash.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDiff.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJScript.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJava.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPython.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushSql.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushHaxe.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushXml.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPhp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushLua.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCpp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCss.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCSharp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDart.js"></script>
+<link type="text/css" rel="stylesheet" href="./../cmsimde/static/syntaxhighlighter/css/shCoreDefault.css"/>
+<script type="text/javascript">SyntaxHighlighter.all();</script>
+<!-- 暫時不用
+<script src="./../cmsimde/static/fengari-web.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/Cango-13v08-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/CangoAxes-4v01-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/gearUtils-05.js"></script>
+-->
+<!-- for Brython 暫時不用
+<script src="https://scrum-3.github.io/web/brython/brython.js"></script>
+<script src="https://scrum-3.github.io/web/brython/brython_stdlib.js"></script>
+-->
+<style>
+img.add_border {
+    border: 3px solid blue;
+}
+</style>
+
+</head>
+<body>
+<div class='container'><nav>
+        
+    <div class="site-wrap">
+
+    <div class="site-mobile-menu">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+    
+            <header class="site-navbar py-4 bg-white" role="banner">
+              <div class="container-fluid">
+                <div class="row align-items-center">
+                <h1>40923244 cp2020</h1>
+                <div class="pl-4">
+                    <form>
+                    <input type="text" placeholder="Search" name="q" id="tipue_search_input" pattern=".{2,}" title="At least 2 characters" required>
+                    </form>
+                </div>
+                  <!-- <div class="col-11 col-xl-2">
+                    <h1 class="mb-0 site-logo"><a href="index.html" class="text-black h2 mb-0">40923244 cp2020</a></h1> 
+                  </div>
+                  -->
+                  <div class="col-12 col-md-10 d-none d-xl-block">
+                    <nav class="site-navigation position-relative text-right" role="navigation">
+    <ul class='site-menu js-clone-nav mr-auto d-none d-lg-block'>
+                        <li class="active has-children"><a href="index.html">Home</a>
+                        <ul class="dropdown">
+                            <li><a href="sitemap.html">Site Map</a></li>
+                            <li><a href="./../reveal/index.html">reveal</a></li>
+                            <li><a href="./../blog/index.html">blog</a></li>
+                        </ul>
+                      </li>
+                     <li><a href='首頁.html'>首頁</a><li class='has-children'><a href='HW1.html'>HW1</a><ul class='dropdown'><li class='has-children'><a href='PCH9-Networking Overview.html'>PCH9-Networking Overview</a><ul class='dropdown'><li><a href='Network Defined by Geography(地理定義的網絡).html'>Network Defined by Geography(地理定義的網絡)</a><li><a href='Network Defined by Relationships(關係定義的網絡).html'>Network Defined by Relationships(關係定義的網絡)</a><li><a href='Network Defined by Topology(拓撲定義的網絡).html'>Network Defined by Topology(拓撲定義的網絡)</a></li></ul><li class='has-children'><a href='PCH15-Introduction to Wireless Networking.html'>PCH15-Introduction to Wireless Networking</a><ul class='dropdown'><li><a href='Wireless LANs(無線局域網).html'>Wireless LANs(無線局域網)</a><li><a href='Wireless Devices(無線設備).html'>Wireless Devices(無線設備)</a><li><a href='Wireless Standards(無線標準).html'>Wireless Standards(無線標準)</a><li><a href='Privacy and Security(隱私權與安全性).html'>Privacy and Security(隱私權與安全性)</a><li><a href='Wireless Networking Types(無線網絡類型).html'>Wireless Networking Types(無線網絡類型)</a></li></li></ul></ul><li><a href='HW2.html'>HW2</a><li class='has-children'><a href='HW3.html'>HW3</a><ul class='dropdown'><li><a href='EX.28.html'>EX.28</a><li><a href='EX.29.html'>EX.29</a><li><a href='EX.30.html'>EX.30</a></li>
+                      </ul>
+                </nav>
+              </div>
+              <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle text-black"><span class="icon-menu h3"></span></a></div>
+              </div>
+
+            </div>
+          </div>
+          
+        </header>
+    <div id="tipue_search_content">EX.29 << <a href='EX.29.html'>Previous</a> <br /><h1>EX.30</h1>
+<p class="pagetitle">Pick Word<span> </span><img class="chili" src="https://www.practicepython.org/assets/img/chili-liz-20x20.png"/><span> </span><img class="chili" src="https://www.practicepython.org/assets/img/chili-liz-20x20.png"/><span>選擇單詞 </span><img class="chili" src="https://www.practicepython.org/assets/img/chili-liz-20x20.png"/><span><span> </span></span><img class="chili" src="https://www.practicepython.org/assets/img/chili-liz-20x20.png"/></p>
+<div>Exercise 30 (and<span> </span><a href="https://www.practicepython.org/solution/2016/10/15/30-pick-word-solutions.html">Solution</a>)<span>練習30（和</span><a href="https://www.practicepython.org/solution/2016/10/15/30-pick-word-solutions.html"><span>解決方案</span></a><span>）</span><br/><br/><i></i></div>
+<p><em>This exercise is Part 1 of 3 of the Hangman exercise series. The other exercises are:<span> </span><a href="https://www.practicepython.org/exercise/2017/01/02/31-guess-letters.html">Part 2</a><span> </span>and<span> </span><a href="https://www.practicepython.org/exercise/2017/01/10/32-hangman.html">Part 3</a>.</em></p>
+<p><em><span>本練習是《 Hangman》練習系列3的第1部分。其他練習是：</span><a href="https://www.practicepython.org/exercise/2017/01/02/31-guess-letters.html"><span>第2</span></a><span></span><a href="https://www.practicepython.org/exercise/2017/01/10/32-hangman.html"><span>部分</span></a><span>和<a href="https://www.practicepython.org/exercise/2017/01/10/32-hangman.html">第3部分</a>。</span></em></p>
+<p>In this exercise, the task is to write a function that picks a random word from a list of words from the<span> </span><a href="http://norvig.com/ngrams/sowpods.txt">SOWPODS dictionary</a>. Download this file and save it in the same directory as your Python code. This file is<span> </span><a href="https://en.wikipedia.org/wiki/Peter_Norvig">Peter Norvig</a>’s compilation of the dictionary of words used in professional Scrabble tournaments. Each line in the file contains a single word.</p>
+<p><span>在本練習中，任務是編寫一個函數，該函數從</span><a href="http://norvig.com/ngrams/sowpods.txt"><span><span>SOWPODS詞典</span></span></a><span><span>的單詞列表中選擇一個隨機單詞</span><span>。</span><span>下載此文件並將其保存在與Python代碼相同的目錄中。</span><span>該文件是</span></span><a href="https://en.wikipedia.org/wiki/Peter_Norvig"><span><span>Peter Norvig</span></span></a><span><span>在專業Scrabble錦標賽中使用的單詞詞典的彙編。</span><span>文件中的每一行都包含一個單詞。</span></span></p>
+<p><em>Hint: use the Python<span> </span><code class="highlighter-rouge">random</code><span> </span>library for picking a random word.</em></p>
+<p><em><span>提示：使用Python</span><code class="highlighter-rouge">random</code><span>庫選擇隨機單詞。</span></em></p>
+<p>Aside: what is SOWPODS</p>
+<p id="aside-what-is-sowpods"><span>撇開：什麼是SOWPODS</span></p>
+<p>SOWPODS is a word list commonly used in word puzzles and games (like Scrabble for example). It is the combination of the Scrabble Player’s Dictionary and the Chamber’s Dictionary. (The history of SOWPODS is quite interesting, I highly recommend reading the<span> </span><a href="https://en.wikipedia.org/wiki/SOWPODS">Wikipedia article if you are curious</a>.)</p>
+<p><span>SOWPODS是單詞拼圖和遊戲中常用的單詞列表（例如，Scrabble）。它是拼字遊戲玩家詞典和商會詞典的組合。（SOWPODS的歷史非常有趣，</span><a href="https://en.wikipedia.org/wiki/SOWPODS"><span><span>如果您有好奇心</span></span></a><span><span>，我強烈建議閱讀</span><a href="https://en.wikipedia.org/wiki/SOWPODS"><span>Wikipedia文章</span></a><span>。）</span></span></p>
+<p>Previous exercises with similar concepts</p>
+<p id="previous-exercises-with-similar-concepts"><span>以前的類似概念練習</span></p>
+<p>In previous exercises, we have covered all the necessary skills needed to complete this exercise. Check out:</p>
+<p><span>在以前的練習中，我們介紹了完成此練習所需的所有必要技能。</span><span>查看：</span></p>
+<ol>
+<li><a href="https://www.practicepython.org/exercise/2014/12/06/22-read-from-file.html">Exercise 22: read from a file</a><span> </span><img class="chili" src="https://www.practicepython.org/assets/img/chili-liz-20x20.png"/>1.<a href="https://www.practicepython.org/exercise/2014/12/06/22-read-from-file.html"><span><span>練習22：讀取文件</span></span></a><span> </span><img class="chili" src="https://www.practicepython.org/assets/img/chili-liz-20x20.png"/></li>
+<li><a href="https://www.practicepython.org/exercise/2014/04/02/09-guessing-game-one.html">Exercise 9: generating a random number</a><span> </span><img class="chili" src="https://www.practicepython.org/assets/img/chili-liz-20x20.png"/><span> </span><img class="chili" src="https://www.practicepython.org/assets/img/chili-liz-20x20.png"/><span> </span><img class="chili" src="https://www.practicepython.org/assets/img/chili-liz-20x20.png"/>2.<a href="https://www.practicepython.org/exercise/2014/04/02/09-guessing-game-one.html"><span><span>練習9：生成一個隨機數</span></span></a><span> </span><img class="chili" src="https://www.practicepython.org/assets/img/chili-liz-20x20.png"/><span> </span><img class="chili" src="https://www.practicepython.org/assets/img/chili-liz-20x20.png"/><span> </span><img class="chili" src="https://www.practicepython.org/assets/img/chili-liz-20x20.png"/></li>
+<li><a href="https://www.practicepython.org/exercise/2014/02/15/03-list-less-than-ten.html">Exercise 3: accessing an element of a list</a><span> </span><img class="chili" src="https://www.practicepython.org/assets/img/chili-liz-20x20.png"/><span> </span><img class="chili" src="https://www.practicepython.org/assets/img/chili-liz-20x20.png"/>3.<a href="https://www.practicepython.org/exercise/2014/02/15/03-list-less-than-ten.html"><span><span>練習3：訪問列表的元素</span></span></a><span> </span><img class="chili" src="https://www.practicepython.org/assets/img/chili-liz-20x20.png"/><span> </span><img class="chili" src="https://www.practicepython.org/assets/img/chili-liz-20x20.png"/></li>
+</ol>
+<p>Brief concept review簡要概念回顧</p>
+<p>Reading a file讀取文件</p>
+<p>The Python way of reading a file from disk is to use the<span> </span><code class="highlighter-rouge">with</code><span> </span>construction together with a<span> </span><code class="highlighter-rouge">while</code><span> </span>loop:</p>
+<p><span>從磁盤讀取文件的Python方法是將</span><code class="highlighter-rouge">with</code><span><span>構造與</span></span><code class="highlighter-rouge">while</code><span><span>循環</span><span>一起使用</span><span>：</span></span></p>
+<figure class="highlight">
+<pre><code class="language-python" data-lang="python"><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s">'filename.txt'</span><span class="p">,</span> <span class="s">'r'</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+  <span class="n">line</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">readline</span><span class="p">()</span>
+  <span class="k">while</span> <span class="n">line</span><span class="p">:</span>
+    <span class="c"># do something to the line, for example</span>
+    <span class="c"># saving it to disk</span>
+    <span class="n">line</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">readline</span><span class="p">()</span>
+
+<span class="k">print</span><span class="p">(</span><span class="s">"The entire file as been read!"</span><span class="p">)</span></code></pre>
+</figure>
+<p>The file<span> </span><code class="highlighter-rouge">filename.txt</code><span> </span>should be in the same directory as your Python script.</p>
+<p><span>該文件</span><code class="highlighter-rouge">filename.txt</code><span><span>應與Python腳本位於同一目錄中。</span></span></p>
+<p>The idea behind the<span> </span><code class="highlighter-rouge">with</code><span> </span>construction is that it isolates any variables defined in the<span> </span><code class="highlighter-rouge">with</code><span> </span>line from the rest of your code. When you are dealing with files, this means properly opening and closing the files. The<span> </span><code class="highlighter-rouge">open</code><span> </span>line in the<span> </span><code class="highlighter-rouge">with</code><span> </span>statement actually does the opening of the file and saves the file object in the variable<span> </span><code class="highlighter-rouge">f</code>. The<span> </span><code class="highlighter-rouge">'r'</code><span> </span>passed into the<span> </span><code class="highlighter-rouge">open()</code><span> </span>function tells Python “open the file for reading”. If the<span> </span><code class="highlighter-rouge">'w'</code><span> </span>argument is passed instead, Python will interpret this as “open the file and allow writing to it.”</p>
+<p>After all the code inside the<span> </span><code class="highlighter-rouge">with</code><span> </span>block is finished, the file<span> </span><code class="highlighter-rouge">f</code><span> </span>is properly closed by Python. So by the time the program starts executing the<span> </span><code class="highlighter-rouge">print</code><span> </span>statement, the file is already closed.</p>
+<p>One thing to remember when reading lines from a file in this way is that a line contains a<span> </span><code class="highlighter-rouge">\n</code>, or a newline character at the end. So before processing the line, it is usually a good idea to use<span> </span><code class="highlighter-rouge">.strip()</code><span> </span>to remove the newlines and spaces from the start and end of the lines, like so:</p>
+<p><code class="highlighter-rouge">with</code><span>構造背後的想法是，它將</span><code class="highlighter-rouge">with</code><span>行中定義的所有變量與其餘代碼隔離開來。在處理文件時，這意味著正確打開和關閉文件。語句中的</span><code class="highlighter-rouge">open</code><span>行</span><code class="highlighter-rouge">with</code><span>實際上是打開文件並將文件對象保存在變量中的</span><code class="highlighter-rouge">f</code><span>。將</span><code class="highlighter-rouge">'r'</code><span>傳遞到</span><code class="highlighter-rouge">open()</code><span>函數告訴Python的“打開文件進行讀取”。如果</span><code class="highlighter-rouge">'w'</code><span>改為傳遞參數，Python會將其解釋為“打開文件並允許對其進行寫入”。</span></p>
+<p><span></span><code class="highlighter-rouge">with</code><span><span>塊中的</span><span>所有代碼</span><span>完成後，</span></span><code class="highlighter-rouge">f</code><span><span>Python將正確關閉</span><span>文件</span><span>。</span><span>因此，當程序開始執行該</span></span><code class="highlighter-rouge">print</code><span><span>語句時，該文件已經關閉。</span></span></p>
+<p><span><span>以這種方式從文件中讀取行時要記住的一件事是，行</span></span><code class="highlighter-rouge">\n</code><span><span>的末尾</span><span>包含</span><span>或換行符。</span><span>因此，在處理行之前，通常最好</span></span><code class="highlighter-rouge">.strip()</code><span><span>從行的開頭和結尾刪除換行符和空格，如下所示：</span></span></p>
+<figure class="highlight">
+<pre><code class="language-python" data-lang="python"><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s">'filename.txt'</span><span class="p">,</span> <span class="s">'r'</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+  <span class="n">line</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">readline</span><span class="p">()</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
+  <span class="k">while</span> <span class="n">line</span><span class="p">:</span>
+    <span class="c"># do something with the 'line' variable</span>
+    <span class="n">line</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">readline</span><span class="p">()</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span></code></pre>
+</figure>
+<p>There are many ways of reading lines from files. If for example you want to read all the lines of the file into a list, you can use the following variant:</p>
+<p><span>有許多方法可以從文件中讀取行。</span><span>例如，如果要將文件的所有行都讀入列表，則可以使用以下變體：</span></p>
+<figure class="highlight">
+<pre><code class="language-python" data-lang="python"><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s">'filename.txt'</span><span class="p">,</span> <span class="s">'r'</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+  <span class="n">lines</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">readlines</span><span class="p">()</span></code></pre>
+</figure>
+<p>At the end of this code, the variable<span> </span><code class="highlighter-rouge">lines</code><span> </span>will have all the elements from the file in a Python list.</p>
+<p><span>在此代碼的結尾，變量</span><code class="highlighter-rouge">lines</code><span><span>將在Python列表中包含文件中的所有元素。</span></span></p>
+<p>Here are a few references about opening files, if you would like to read more:</p>
+<p><span>在此代碼的結尾，變量</span><code class="highlighter-rouge">lines</code><span>將在Python列表中包含文件中的所有元素。</span></p>
+<p><span><span>如果您想了解更多信息，這裡有一些有關打開文件的參考：</span></span></p>
+<ul>
+<li><a href="https://learnpythonthehardway.org/book/ex15.html">Learn Python the Hard Way page about reading files</a></li>
+<li><a href="https://learnpythonthehardway.org/book/ex15.html"><span><span>在關於閱讀文件的困難方式頁面上學習Python</span></span></a></li>
+<li>The Python 3.5 documentation about<span> </span><a href="https://docs.python.org/3.5/tutorial/inputoutput.html#reading-and-writing-files">reading and writing files</a></li>
+<li><span><span>有關</span><a href="https://docs.python.org/3.5/tutorial/inputoutput.html#reading-and-writing-files"><span>讀取和寫入文件</span></a><span>的Python 3.5文檔</span></span></li>
+</ul>
+<p>Generating a random number產生一個隨機數</p>
+<p>Python’s<span> </span><code class="highlighter-rouge">random</code><span> </span>library is used to do operations with random numbers. For a list of the full methods available in the<span> </span><code class="highlighter-rouge">random</code><span> </span>library, check the<span> </span><a href="https://docs.python.org/3.5/library/random.html">Python 3 documentation of the random library</a>.</p>
+<p><span>Python的</span><code class="highlighter-rouge">random</code><span><span>庫用於對隨機數進行運算。</span><span>有關該</span></span><code class="highlighter-rouge">random</code><span><span>庫中</span><span>可用的完整方法的列表</span><span>，請查看</span></span><a href="https://docs.python.org/3.5/library/random.html"><span><span>random庫</span></span></a><span><span>的</span><a href="https://docs.python.org/3.5/library/random.html"><span>Python 3文檔</span></a><span>。</span></span></p>
+<p>The two methods that might be useful for this exercise are<span> </span><code class="highlighter-rouge">random.choice()</code><span> </span>or<span> </span><code class="highlighter-rouge">random.randint()</code>. The documentation is easy to read, so check out the docs for how these methods work!</p>
+<p><span>此練習可能有用的兩種方法是</span><code class="highlighter-rouge">random.choice()</code><span><span>或</span></span><code class="highlighter-rouge">random.randint()</code><span><span>。</span><span>該文檔易於閱讀，因此請查看文檔以了解這些方法的工作方式！</span></span></p>
+<p>Happy coding!</p>
+<p id="happy-coding"><span>祝您編碼愉快！</span></p>
+<div class="section section-lab"></div>
+<div class="section section-lab"></div>
+<p lang=""><strong><span title="Quick scroll up"></span></strong></p>
+<p><strong><span title="Quick scroll up"></span></strong></p>
+<div actguid="d87f2e9e0a0001dc263939ec3d28d95d" class="asx" inlineparams="inlineClient=%2Fsuperactivity%2Fassessment2%2FInlineAssessmentClient.swf&amp;activityMode=delivery&amp;activityContextGUID=d87f2e9e0a0001dc263939ec3d28d95d&amp;userGUID=d1c6c8310a0001dc6e11ac3d0a483b6e&amp;activityService=%2Fjcourse%2Fa2%2Frest&amp;webContentPath=%2Frepository%2Fwebcontent%2Fd826575d0a0001dc3e9f244fa018c560%2F&amp;logService=%2Flog%2Fserver&amp;">
+<div class="activitywrap purpose didigetthis flash" id="dpch09_digt02">
+<div class="activityhead">
+<p class="tw-ta-container hide-focus-ring tw-nfl" id="tw-target-rmn-container"></p>
+</div>
+</div>
+</div>
+<div actguid="d87f2e9c0a0001dc5923564588784f07" class="asx" inlineparams="inlineClient=%2Fsuperactivity%2Fassessment2%2FInlineAssessmentClient.swf&amp;activityMode=delivery&amp;activityContextGUID=d87f2e9c0a0001dc5923564588784f07&amp;userGUID=d1c6c8310a0001dc6e11ac3d0a483b6e&amp;activityService=%2Fjcourse%2Fa2%2Frest&amp;webContentPath=%2Frepository%2Fwebcontent%2Fd826575d0a0001dc3e9f244fa018c560%2F&amp;logService=%2Flog%2Fserver&amp;">
+<div class="activitywrap purpose learnbydoing flash" id="dpch09_lbd04">
+<div class="activityhead"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><br />EX.29 << <a href='EX.29.html'>Previous</a> </div>
+        
+    <!-- footer -->
+      <div class="container">
+        <div class="row pt-3 mx-auto">
+            <p>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </p>
+        </div>
+      </div>
+    <!-- for footer -->
+    
+        </div> <!-- for site wrap -->
+            <!-- <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script> -->
+            <script src="../cmsimde/static/chimper/js/jquery-migrate-3.0.1.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery-ui.js"></script>
+            <script src="../cmsimde/static/chimper/js/popper.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/owl.carousel.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.stellar.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.countdown.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.magnific-popup.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap-datepicker.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/aos.js"></script>
+            <!--
+            <script src="../cmsimde/static/chimper/js/typed.js"></script>
+                    <script>
+                    var typed = new Typed('.typed-words', {
+                    strings: ["Web Apps"," WordPress"," Mobile Apps"],
+                    typeSpeed: 80,
+                    backSpeed: 80,
+                    backDelay: 4000,
+                    startDelay: 1000,
+                    loop: true,
+                    showCursor: true
+                    });
+                    </script>
+            -->
+            <script src="../cmsimde/static/chimper/js/main.js"></script>
+        
+<!-- 啟用 LaTeX equations 編輯 -->
+  <!-- <script>
+  MathJax = {
+    tex: {inlineMath: [['$', '$'], ['\(', '\)']]}
+  };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>-->
+    </body></html>
+        

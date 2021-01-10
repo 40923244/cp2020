@@ -133,8 +133,52 @@ img.add_border {
           </div>
           
         </header>
-    <div id="tipue_search_content">Network Defined by Topology(拓撲定義的網絡) << <a href='Network Defined by Topology(拓撲定義的網絡).html'>Previous</a> <a href='Wireless LANs(無線局域網).html'>Next</a> >> Wireless LANs(無線局域網)<br /><h1>PCH15-Introduction to Wireless Networking</h1>
-<br />Network Defined by Topology(拓撲定義的網絡) << <a href='Network Defined by Topology(拓撲定義的網絡).html'>Previous</a> <a href='Wireless LANs(無線局域網).html'>Next</a> >> Wireless LANs(無線局域網)</div>
+    <div id="tipue_search_content">EX.28 << <a href='EX.28.html'>Previous</a> <a href='EX.30.html'>Next</a> >> EX.30<br /><h1>EX.29</h1>
+<br/>Tic Tac Toe Game<span> </span><img class="chili" src="https://www.practicepython.org/assets/img/chili-liz-20x20.png"/><span> </span><img class="chili" src="https://www.practicepython.org/assets/img/chili-liz-20x20.png"/><span> </span><img class="chili" src="https://www.practicepython.org/assets/img/chili-liz-20x20.png"/><span>井字遊戲 </span><img class="chili" src="https://www.practicepython.org/assets/img/chili-liz-20x20.png"/><span><span> </span></span><img class="chili" src="https://www.practicepython.org/assets/img/chili-liz-20x20.png"/><span><span> </span></span><img class="chili" src="https://www.practicepython.org/assets/img/chili-liz-20x20.png"/> <br/>Exercise 29 (and<span> </span><a href="https://www.practicepython.org/solution/2016/09/11/29-tic-tac-toe-game-solutions.html">Solution</a>)<span>練習29（和</span><a href="https://www.practicepython.org/solution/2016/09/11/29-tic-tac-toe-game-solutions.html"><span>解決方案</span></a><span>）</span>
+<p><em>This exercise is Part 4 of 4 of the Tic Tac Toe exercise series. The other exercises are:<span> </span><a href="https://www.practicepython.org/exercise/2014/12/27/24-draw-a-game-board.html">Part 1</a>,<span> </span><a href="https://www.practicepython.org/exercise/2015/11/16/26-check-tic-tac-toe.html">Part 2</a>, and<span> </span><a href="https://www.practicepython.org/exercise/2015/11/26/27-tic-tac-toe-draw.html">Part 3</a>.</em></p>
+<p><em><span>此練習是Tic Tac Toe練習系列4之4的第4部分。其他練習是：</span><a href="https://www.practicepython.org/exercise/2014/12/27/24-draw-a-game-board.html"><span>第1部分</span></a><span>，</span><a href="https://www.practicepython.org/exercise/2015/11/16/26-check-tic-tac-toe.html"><span>第2</span></a><span></span><a href="https://www.practicepython.org/exercise/2015/11/26/27-tic-tac-toe-draw.html"><span>部分</span></a><span>和<a href="https://www.practicepython.org/exercise/2015/11/26/27-tic-tac-toe-draw.html">第3部分</a>。</span></em></p>
+<p>In 3 previous exercises, we built up a few components needed to build a Tic Tac Toe game in Python:</p>
+<p><span>在之前的3個練習中，我們建立了一些用Python構建Tic Tac Toe遊戲所需的組件：</span></p>
+<ol>
+<li><a href="https://www.practicepython.org/exercise/2014/12/27/24-draw-a-game-board.html">Draw the Tic Tac Toe game board</a>1.<a href="https://www.practicepython.org/exercise/2014/12/27/24-draw-a-game-board.html"><span><span>畫井字遊戲板</span></span></a></li>
+<li><a href="https://www.practicepython.org/exercise/2015/11/16/26-check-tic-tac-toe.html">Checking whether a game board has a winner</a>2.<a href="https://www.practicepython.org/exercise/2015/11/16/26-check-tic-tac-toe.html"><span><span>檢查遊戲板是否有贏家</span></span></a></li>
+<li><a href="https://www.practicepython.org/exercise/2015/11/26/27-tic-tac-toe-draw.html">Handle a player move from user input</a>3.<a href="https://www.practicepython.org/exercise/2015/11/26/27-tic-tac-toe-draw.html"><span><span>處理玩家從用戶輸入的移動</span></span></a></li>
+</ol>
+<p>The next step is to put all these three components together to make a two-player Tic Tac Toe game! Your challenge in this exercise is to use the functions from those previous exercises all together in the same program to make a two-player game that you can play with a friend. There are a lot of choices you will have to make when completing this exercise, so you can go as far or as little as you want with it.</p>
+<p><span>下一步是將所有這三個組成部分放在一起，組成一個兩人遊戲的Tic Tac Toe遊戲！</span><span>在本練習中，您面臨的挑戰是在同一程序中一起使用先前練習中的功能，以製作一個可以與朋友一起玩的兩人遊戲。</span><span>完成本練習時，您將有很多選擇，因此您可以根據自己的需要進行選擇。</span></p>
+<p>Here are a few things to keep in mind:</p>
+<p><span>請記住以下幾點：</span></p>
+<ul>
+<li>You should keep track of who won - if there is a winner, show a congratulatory message on the screen.</li>
+<li><span>您應該跟踪誰贏了-如果有贏家，則在屏幕上顯示祝賀消息</span></li>
+<li>If there are no more moves left, don’t ask for the next player’s move!</li>
+<li><span><span>如果沒有其他動作了，請不要要求下一個玩家的動作！</span></span></li>
+</ul>
+<p>As a bonus, you can ask the players if they want to play again and keep a running tally of who won more - Player 1 or Player 2.</p>
+<p><span>作為獎勵，您可以詢問玩家是否想再次玩，並保持連續統計誰贏得了更多的獎金-玩家1或玩家2。</span></p>
+<p>Tips提示</p>
+<p><em>Starting this exercise from scratch will take you longer than 30 minutes. The best way to save time is to reuse work that has already been done!</em></p>
+<p><em><span>從頭開始此練習將花費您30分鐘以上的時間。節省時間的最好方法是重用已經完成的工作！</span></em></p>
+<p>Because you have already done the work of the previous 3 exercises, no need to re-do them all! Simply take your code from those exercises, copy it into a new file, and start again. Even if you lost your code from those exercises, go to the solutions pages,<span> </span><a href="https://www.practicepython.org/exercise/2014/12/27/24-draw-a-game-board.html">here</a>,<span> </span><a href="https://www.practicepython.org/exercise/2015/11/16/26-check-tic-tac-toe.html">here</a>, and<span> </span><a href="https://www.practicepython.org/exercise/2015/11/26/27-tic-tac-toe-draw.html">here</a>, pick your favorite solutions, and start from those!</p>
+<p><span>由於您已經完成了前面3個練習的工作，因此無需全部重做！只需從這些練習中獲取代碼，將其複製到新文件中，然後重新開始即可。即使您從這些練習中丟失了代碼，也請轉到解決方案頁面，</span><a href="https://www.practicepython.org/exercise/2014/12/27/24-draw-a-game-board.html"><span><span>此處</span></span></a><span><span>，</span></span><a href="https://www.practicepython.org/exercise/2015/11/16/26-check-tic-tac-toe.html"><span><span>此處</span></span></a><span><span>和</span></span><a href="https://www.practicepython.org/exercise/2015/11/26/27-tic-tac-toe-draw.html"><span><span>此處</span></span></a><span><span>，選擇您喜歡的解決方案，然後從中開始！</span></span></p>
+<p>A large part of programming is reusing code written by someone else to accomplish a task. Sometimes it is fun to write a solution yourself, but other times you want to build on top of something else. This exercise gives you an opportunity to practice one of the arts of programming - starting from code someone else wrote and creating something on top of it.</p>
+<p><span>編程的很大一部分是重用別人編寫的代碼來完成任務。</span><span>有時自己編寫一個解決方案很有趣，但有時您想在其他基礎上構建。</span><span>本練習為您提供了一種實踐編程藝術的機會-從別人編寫的代碼開始，然後在其上創建一些東西。</span></p>
+<p>Resources資源</p>
+<p>To effectively complete this exercise, you will need to make extensive use of functions to accomplish small, modular, tasks within your larger program. Here are some resources about functions in case you get stuck:</p>
+<p><span>為了有效地完成此練習，您將需要充分利用函數來完成較大程序中的小型模塊化任務。</span><span>以下是有關函數的一些資源，以防您卡住：</span></p>
+<ul>
+<li><a href="https://www.practicepython.org/exercise/2014/04/16/11-check-primality-functions.html">The PracticePython take on functions</a></li>
+<li><a href="https://www.practicepython.org/exercise/2014/04/16/11-check-primality-functions.html"><span><span>PracticePython具有功能</span></span></a></li>
+<li>Learn Python the Hard Way,<span> </span><a href="http://learnpythonthehardway.org/book/ex19.html">exercise 19</a><span> </span>and<span> </span><a href="http://learnpythonthehardway.org/book/ex21.html">exercise 21</a></li>
+<li><span><span>艱苦學習Python，</span></span><a href="http://learnpythonthehardway.org/book/ex19.html"><span><span>練習19</span></span></a><span><span>和</span></span><a href="http://learnpythonthehardway.org/book/ex21.html"><span><span>21</span></span></a></li>
+<li>Execute some basic code on<span> </span><a href="http://www.learnpython.org/en/Functions">learnpython.org</a></li>
+<li><span><span>在</span><a href="http://www.learnpython.org/en/Functions"><span>learnpython.org</span></a><span>上執行一些基本代碼</span></span></li>
+</ul>
+<p>If you are new to Python, this might be one of the longest programs you have written so far, so have fun!</p>
+<p><span>如果您是Python的新手，那麼它可能是您迄今為止編寫的最長的程序之一，請盡情玩樂！</span></p>
+<p>Happy coding!</p>
+<p>祝您編碼愉快！</p>
+<br />EX.28 << <a href='EX.28.html'>Previous</a> <a href='EX.30.html'>Next</a> >> EX.30</div>
         
     <!-- footer -->
       <div class="container">
